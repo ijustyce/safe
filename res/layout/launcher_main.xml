@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5sp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50sp"
+        android:layout_marginRight="10sp"
+        android:onClick="btClick" />
+
+    <Button
+        android:id="@+id/free_memory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/exit"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="10sp"
+        android:onClick="btClick" />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/free_memory"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="10sp"
+        android:onClick="btClick" />
+
+    <ScrollView
+        android:layout_below="@id/textView"
+        android:id="@+id/loadApp"
+        android:alpha="0.7"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

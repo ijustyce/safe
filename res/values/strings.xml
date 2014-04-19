@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app info -->
+    <string name="app_name">safe privacy</string>
+    <string name="hello_world">More concise , more unique</string>
+
+    <!-- txApplication -->
+    <string name="copy_success">copy success</string>
+
+    <!-- settings -->
+    <string name="summary">must*</string>
+    <string name="anim">Windows animation</string>
+    <string name="theme">Application theme</string>
+    <string name="lock">Application locker</string>
+
+    <!-- about -->
+    <string name="txh_version">tx-Contacts 1.0</string>
+    <string name="about_txh">powered by bbs.ijustyce.com</string>
+
+    <!-- feedback -->
+    <string name="submit">submit</string>
+    <string name="contact">contact</string>
+    <string name="msg">content</string>
+    <string name="dialog_title">please wait</string>
+    <string name="dialog_content">please wait some seconds…</string>
+    <string name="error_feedback">input can not be empty</string>
+
+    <!-- baseclass -->
+    <string name="sign_fail">Not the original software,uninstall is needed.</string>
+
+    <!-- password -->
+    <string name="hint">please input your password</string>
+    <string name="ok">OK</string>
+    <string name="del">delete</string>
+    <string name="pw_success">success</string>
+    <string name="pw_error">error</string>
+    <string name="pw_wait">Error than 3 times , exit application</string>
+    <string name="pw_set">please set your password</string>
+    <string name="pass_hint">plase remember your gesture</string>
+    <string name="pass_info">please unlock</string>
+    <string name="pass_first">draw your gesture</string>
+    <string name="pass_affirm">affirm your gesture</string>
+    <string name="pass_affirm_error">inconformity</string>
+    <string name="pass_short">password to short</string>
+
+    <!-- 以下是自定义的颜色 -->
+
+    <color name="bkcolor">#33CCFF</color>
+    <drawable name="newmessage">#FFF</drawable>
+
+    <!-- sms part -->
+    <string name="MainActivity_default_sms">please change this app to default sms .</string>
+    <string name="MainActivity_safe_launcher">Safe Launcher</string>
+    <string name="MainActivity_hide_app">Hide Apps</string>
+    <string name="MainActivity_safe_contacts">Safe Contacts</string>
+    <string name="MainActivity_safe_sms">Safe Sms</string>
+    <string name="MainActivity_intercept">Intercept</string>
+    <string name="MainActivity_trash">Trash Sms</string>
+    <string name="MainActivity_feedback">FeedBack</string>
+    <string name="MainActivity_other">Other Function</string>
+
+</resources>
