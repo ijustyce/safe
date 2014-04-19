@@ -10,6 +10,8 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.ListFragment;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,12 +22,14 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.ijustyce.androidlib.baseclass;
 import com.ijustyce.safe.R;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
-public class MainActivity extends baseclass {
+public class MainActivity extends FragmentActivity {
 	
 	private Handler handler = null;
+	protected ListFragment mFrag;
+	static SlidingMenu menu;  
 	ActivityManager mActivityManager = null;
 	ConnectivityManager mCM;
 	String clickClass;
@@ -43,6 +47,8 @@ public class MainActivity extends baseclass {
 			handler = new Handler();
 			handler.post(runnable);
 		}
+		initSlidingMenu();
+		unit.showLeftMenu();
 	}
 	
 	Runnable runnable = new Runnable() {
@@ -51,7 +57,40 @@ public class MainActivity extends baseclass {
 			LoadApp.getAppList(MainActivity.this);
 		}
 	};
-	
+
+	private void initSlidingMenu() {
+
+		/**
+		 * set main view , in project should delete !
+		 */
+//		setContentView(R.layout.sliding_content_frame);
+//		getSupportFragmentManager().beginTransaction()
+//				.replace(R.id.sliding_content_frame, new SlidingListFragment()).commit();
+
+		// set sliding menu
+		menu = new SlidingMenu(this);
+		menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+		menu.setShadowWidthRes(R.dimen.shadow_width);
+		menu.setShadowDrawable(R.drawable.shadow);
+		menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+		menu.setFadeDegree(0.35f);
+		menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+		// set sliding menu view
+		menu.setMenu(R.layout.sliding_menu_frame);
+		getSupportFragmentManager().beginTransaction()
+				.replace(R.id.sliding_menu_frame, new SlidingListFragment()).commit();
+	}
+
+	@Override
+	public void onBackPressed() {
+		
+		if (menu.isMenuShowing()) {
+			menu.showContent();
+		} else {
+			super.onBackPressed();
+		}
+	}
+
 	private void init(){
 		
 		unit.freeMem(MainActivity.this);
