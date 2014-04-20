@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="15sp"
+        android:text="@string/hello_world"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/launcher_exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/exit"
+        android:onClick="btClick" />
+
+    <Button
+        android:id="@+id/launcher_free_memory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/launcher_exit"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/mem"
+        android:onClick="btClick"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/gprs"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/launcher_free_memory"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="10sp"
+        android:onClick="btClick" />
+
+    <Button
+        android:id="@+id/launcher_settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/gprs"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/setting"
+        android:onClick="btClick" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="15sp"
+        android:alpha="0.7"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/loadApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

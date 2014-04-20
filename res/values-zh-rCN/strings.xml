@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">安全助手</string>
+    <string name="hello_world">更简洁，更独特</string>
+
+    <!-- txApplication -->
+    <string name="copy_success">复制成功</string>
+
+    <!-- settings -->
+    <string name="summary">必选*</string>
+    <string name="anim">窗口切换动画</string>
+    <string name="theme">主题</string>
+    <string name="lock">程序锁</string>
+
+    <!-- about -->
+    <string name="txh_version">安全通讯录 1.0</string>
+
+    <!-- feedback -->
+    <string name="submit">提交</string>
+    <string name="contact">联系方式</string>
+    <string name="msg">反馈内容</string>
+    <string name="dialog_title">请稍后</string>
+    <string name="dialog_content">正在提交，请稍后</string>
+    <string name="error_feedback">输入不能为空</string>
+
+    <!-- baseclass -->
+    <string name="sign_fail">不是原版软件，建议您卸载。</string>
+    
+    <!-- password -->
+    <string name="hint">请输入您的密码：</string>
+    <string name="ok">确定</string>
+    <string name="del">回退</string>
+    <string name="pw_success">欢迎使用</string>
+    <string name="pw_error">解锁出错</string>
+    <string name="pw_wait">超过三次错误，程序即将退出</string>
+    <string name="pw_set">请先设置您的密码</string>
+    <string name="pass_hint">手势无法找回，请牢记</string>
+    <string name="pass_info">请绘制手势以解锁</string>
+    <string name="pass_first">请绘制您的手势</string>
+    <string name="pass_affirm">请确认您的手势</string>
+    <string name="pass_affirm_error">两次手势不一致，请重新绘制</string>
+    <string name="pass_short">密码太短，请重新输入</string>
+    
+    <!-- sms part -->
+    <string name="MainActivity_default_sms">请设置本应用为默认短信软件</string>
+    <string name="MainActivity_safe_launcher">安全桌面</string>
+    <string name="MainActivity_hide_app">隐藏应用</string>
+    <string name="MainActivity_safe_contacts">安全通讯录</string>
+    <string name="MainActivity_safe_sms">安全短信</string>
+    <string name="MainActivity_intercept">来电拦截</string>
+    <string name="MainActivity_trash">垃圾短信</string>
+    <string name="MainActivity_feedback">用户反馈</string>
+    <string name="MainActivity_other">其他功能</string>
+    
+</resources>
